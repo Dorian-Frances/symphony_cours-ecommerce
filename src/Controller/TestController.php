@@ -22,7 +22,7 @@ class TestController
      */
     public function test(Request $request) : Response
     {   
-        $age = $request->attributes->get('slug',0);
+        $age = $request->attributes->get('slug');
         
         return new Response("Vous avez $age ans !");
     }
